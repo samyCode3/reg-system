@@ -2,7 +2,7 @@
   "name": "crudsystem",
   "version": "1.0.0",
   "description": "my first node project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon app.js"
   },
