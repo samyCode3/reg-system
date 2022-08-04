@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/public/css/profile.css" />
+    <link rel="stylesheet" href="/public/css/all.css" />
+    <link rel="stylesheet" href="/public/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="container-list">
+          <p class="text" >Logo<span>.</span></p>
+          <div class="list">
+            <div class="inker">
+              <a href="/home">Home</a>
+            </div>
+            <div class="inker">
+              <a href="/post">post</a>
+            </div>
+            <div class="inker">
+              <a href="/profile">Update</a>
+            </div>
+            <div class="inker">
+              <a href="/delete">Delete Account</a>
+            </div>
+            <div class="inker">
+              <a href="/logout">Logout</a>
+            </div>
+          </div>
+          <div class="contact-buy">
+            <div class="iconing">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="iconing">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="iconing">
+              <i class="fas fa-bell"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <form onsubmit="return false" id="profile-form">
+          <div class="users-profile">
+            <div class="myProfile">
+              <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+                <div>
+                  <input type="file" name="" id="" />
+                </div>
+                <div class="btn-loft">
+                  <button type="submit">Change Profile</button>
+                  <button id="changes">Other Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form onsubmit="return false" id="form" enctype="multipart/form-data">
+          <div class="update" id="update">
+            <div class="update-user">
+              <i class="fas fa-cancel" id="cancel"> </i>
+              <div id="error" class="error">
+                <p id="err"></p>
+              </div>
+              <div class="input">
+                <p>Fullname <span>*</span></p>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Update Fullname"
+                />
+              </div>
+              <div class="input">
+                <p>Username <span>*</span></p>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Update Username"
+                />
+              </div>
+
+              <div>
+                <button class="btn" type="submit">Make Changes</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="/public/js/profile.js"></script>
+  </body>
+</html>

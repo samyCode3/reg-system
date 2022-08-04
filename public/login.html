@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h2>World<span>Map</span></h2>
+      <form action="" onsubmit="return false" id="form" autocomplete="off">
+        <div class="form">
+          <div id="error" class="error">
+            <p id="err"></p>
+          </div>
+
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter a password"
+            />
+          </div>
+
+          <button type="submit">Submit</button>
+          <div class="logger">
+            <h3>Don't have an account?</h3>
+            <a href="/register">Signup</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/public/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h2>World<span>Map</span></h2>
+      <form action="" onsubmit="return false" id="form" autocomplete="off">
+        <div class="form">
+          <div id="error" class="error">
+            <p id="err"></p>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter your Fullname"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Enter your Phone-number"
+            />
+          </div>
+          <div>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              placeholder="Enter your Date of birth"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter a password"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="confirmation"
+              id="confirmation"
+              placeholder="Retype your password"
+            />
+          </div>
+          <button type="submit">Submit</button>
+          <div class="logger">
+            <h3>Already have an account?</h3>
+            <a href="/login">Login</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/public/js/register.js"></script>
+  </body>
+</html>

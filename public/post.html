@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome</title>
+  <link rel="stylesheet" href="/public/css/home.css">
+  <link rel="stylesheet" href="/public/css/all.css">
+  <link rel="stylesheet" href="/public/css/all.min.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div class="container-list">
+
+        <p class="text">Logo<span>.</span></p>
+        <div class="list">
+          <div class="inker">
+            <a href="/home">Home</a>
+          </div>
+          <div class="inker">
+            <a href="/post">post</a>
+          </div>
+          <div class="inker">
+            <a href="/profile">Update</a>
+          </div>
+          <div class="inker">
+            <a href="/delete">Delete Account</a>
+          </div>
+          <div class="inker">
+            <a href="/logout">Logout</a>
+          </div>
+
+        </div>
+        <div class="contact-buy">
+          <div class="iconing">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="iconing">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="iconing">
+            
+          <i class="fas fa-bell"></i>
+          </div>
+          
+         
+        </div>
+      </div>
+    </header>
+    
+        <form onsubmit="return false"id="form" enctype = "multipart/form-data">
+            <div class="post-cart">
+              <div id="error" class="error">
+                <p id="err"></p>
+              </div>
+              <div id="success" class="success">
+                <p id="succ"></p>
+              </div>
+            <div class="input-post">
+                <div class="seperate">
+                    <div class="para">
+                    <p>Product Name  <span>*</span></p>
+                    <input type="text" id="product" name="product" placeholder="Enter product name">
+                    </div>
+                    <div class="para">
+                        <p>Price <span>*</span></p>
+                        <input type="text" id="price" name="price"  placeholder="price">
+                    </div>
+                </div>
+               
+                <div class="para">
+                    <p>Quality <span>*</span></p>
+                    <input type="text" id="quality"  name="quality" placeholder="Quality">
+                </div>
+                <div class="para">
+                    <p>shipping fee <span>*</span></p>
+                    <input type="text" id="shipping" name="shipping" placeholder="Shipping fee">
+                </div>
+                <div class="para">
+                    <p>tax <span>*</span></p>
+                    <input type="text" id="tax" name="tax"  placeholder="Tax">
+                </div>
+                <div class="para">
+                    <p>Product Description</p>
+                    <textarea name="describtion" id="describtion" cols="35" rows="10" placeholder="Descripe your product (optional)"></textarea>
+                </div>
+                <button class="btn" type="submit">Done</button>
+            </div>
+        </div>
+        </form> 
+     
+     
+     </div>
+     </div>
+          <script src="/public/js/post.js"></script>
+  </div>
+
+</body>
+
+</html>  
